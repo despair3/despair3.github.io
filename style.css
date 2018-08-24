@@ -1,0 +1,29 @@
+html, body {
+  	height: 100%;
+  	width: 100%;
+  	margin: 0; 
+  	padding: 0;
+}
+
+body {
+	background-image: url("background.gif");
+  	position: relative;
+  	overflow: hidden;
+  	cursor: pointer;
+}
+
+img {
+  	z-index: -1;
+  	position: absolute;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#bg {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
