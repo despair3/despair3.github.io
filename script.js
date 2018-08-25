@@ -3,15 +3,6 @@
 
   	var audio = document.createElement("audio");
     audio.src = "despair.mp3";
-    if (typeof audio.loop == 'boolean'){
-    audio.loop = true;
-    }
-    else {
-    audio.addEventListener('ended', function() {
-        this.currentTime = 0;
-        this.play();
-    }, false);
-    }
     audio.play();
 
   	var element = document.createElement("img");
@@ -20,7 +11,7 @@
     var width;
     var height;
 
-    var random = Math.floor(Math.random() * 5) + 1;
+    var random = Math.floor(Math.random() * 12) + 1;
     if(random == 1){
     	element.src = "rick.gif";
     	width = 159;
@@ -45,6 +36,41 @@
     	element.src = "pepe.gif";
     	width = 90;
     	height = 119;
+    }
+    else if(random == 6){
+    	element.src = "dead.gif";
+    	width = 130;
+    	height = 166;
+    }
+    else if(random == 7){
+    	element.src = "club.gif";
+    	width = 200;
+    	height = 138.5;
+    }
+    else if(random == 8){
+    	element.src = "snoop.gif";
+    	width = 78;
+    	height = 160;
+    }
+    else if(random == 9){
+    	element.src = "miku.gif";
+    	width = 109;
+    	height = 150;
+    }
+    else if(random == 10){
+    	element.src = "pony.gif";
+    	width = 150;
+    	height = 150;
+    }
+    else if(random == 11){
+    	element.src = "spider.gif";
+    	width = 170;
+    	height = 162.5;
+    }
+    else if(random == 12){
+    	element.src = "dance.gif";
+    	width = 136;
+    	height = 160;
     }
 
     element.style.top = (y - height/2).toString() + "px";
