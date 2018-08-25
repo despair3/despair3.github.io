@@ -1,7 +1,7 @@
 (function(glob){
   glob.body.addEventListener("click", function(event){
 
-  	var audio = document.createElement("audio");
+    var audio = document.createElement("audio");
     audio.src = "despair.mp3";
     if (typeof audio.loop == 'boolean'){
     audio.loop = true;
