@@ -3,6 +3,15 @@
 
   	var audio = document.createElement("audio");
     audio.src = "despair.mp3";
+    if (typeof audio.loop == 'boolean'){
+    audio.loop = true;
+    }
+    else {
+    audio.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+    }, false);
+    }
     audio.play();
 
   	var element = document.createElement("img");
