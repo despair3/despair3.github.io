@@ -3,7 +3,7 @@ document.getElementById("background").onmousedown = function(e){
 
     var randomGif = Math.floor(Math.random() * 3) + 1;
     if(randomGif == 1){
-        audio.src = "songs/boom.mp3";
+        audio.src = "songs/despair.mp3";
     }
     else if(randomGif == 2){
         audio.src = "songs/boom.mp3";
